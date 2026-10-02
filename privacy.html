@@ -34,28 +34,34 @@
 <body>
 <main>
   <h1>Privacy Policy</h1>
-  <p class="meta">Lookback · Effective July 3, 2026</p>
+  <p class="meta">Lookback · Effective July 3, 2026 · Revised October 2, 2026</p>
 
-  <p class="lede">Lookback collects no data. Everything the app does happens on your device, and your photos never leave your phone.</p>
+  <p class="lede">Lookback collects no data. There are no servers, no accounts, and no tracking — and your photos never leave your phone.</p>
 
   <h2>Who we are</h2>
   <p>Lookback is an "On This Day" photo-memories app for iOS, made by an independent developer. It resurfaces photos you took on today's date in past years. This policy explains what the app does — and, mostly, what it doesn't do — with your information.</p>
 
   <h2>What we collect: nothing</h2>
-  <p>Lookback has no servers, no user accounts, no analytics, no crash reporting, no advertising, and no third-party SDKs that collect data. The app makes no network requests containing your content or any information about you. Its App Store privacy label is <strong>"Data Not Collected."</strong></p>
+  <p>Lookback has no servers, no user accounts, no analytics, no crash-reporting SDK or service, no advertising, and no third-party SDKs that collect data. Nothing about you is ever sent to us or to any third party. The one network request the app can make with anything derived from your content goes to Apple: when a share card includes a place name, the photo's GPS coordinates are sent to Apple's geocoding service to look up the city — see "Place names on share cards" below. Its App Store privacy label is <strong>"Data Not Collected."</strong></p>
 
   <h2>Your photos</h2>
-  <p>Lookback asks for <strong>read access</strong> to your photo library so it can find photos taken on today's calendar date in previous years. This scanning happens entirely on your device using Apple's PhotoKit framework.</p>
+  <p>Lookback asks for <strong>read and write access</strong> to your photo library: read access so it can find photos taken on today's calendar date in previous years, and write access so you can act on a memory from inside the app (favoriting and deleting, described below). This scanning happens entirely on your device using Apple's PhotoKit framework.</p>
   <ul>
     <li><strong>Nothing is uploaded.</strong> Photos are never transmitted anywhere, for any reason.</li>
-    <li><strong>Limited access works.</strong> If you grant access to only selected photos, Lookback works with just those and never nags you to expand access.</li>
-    <li><strong>We don't modify your library.</strong> The app requests read-only access. If you choose to delete a photo from within Lookback, the deletion is performed through Apple's own system confirmation dialog.</li>
+    <li><strong>Limited access works.</strong> If you grant access to only selected photos, Lookback works with just those. Because it can only find memories among the photos you've shared, it shows a banner offering full access until you grant it; you can dismiss it, and it never blocks the app.</li>
+    <li><strong>Your library changes only at your instruction.</strong> Lookback can do exactly two things to your library, and only when you ask: <strong>favorite or unfavorite</strong> a photo, and <strong>delete</strong> photos (singly or in a batch) — deletion always goes through Apple's own system confirmation dialog and deleted photos land in Recently Deleted. The app never adds, edits, or overwrites photo content, and never changes your library on its own.</li>
     <li><strong>Sensitive-content filtering is on-device.</strong> Lookback can optionally blur or hide photos it detects as sensitive. This uses a machine-learning model bundled inside the app and runs entirely on your device — no photo or analysis result ever leaves your phone.</li>
-    <li><strong>The widget is on-device too.</strong> If you use the Home Screen widget, today's photos are prepared and stored in the app's own private container on your device so the widget can display them. They are not sent anywhere.</li>
+    <li><strong>The widget is on-device too.</strong> If you use the Home Screen widget, photos for today and the next two weeks are prepared on your device — including in the background, when iOS allows — and stored in the app's own private container so the widget can display them. Without Pro, the widget shows a blurred preview prepared the same way. Screenshots and photos flagged as sensitive are never used, and nothing is sent anywhere.</li>
   </ul>
 
+  <h2>Place names on share cards</h2>
+  <p>When you share a photo that has GPS coordinates, the share card can include a city line. If that location line is on — it is on by default for photos that have location data, and you can switch it off on the share screen — the photo's coordinates are sent to <strong>Apple's geocoding service</strong> (CLGeocoder, the same system service Apple's own apps use) to turn them into a place name. Only the coordinates are sent, never the photo, and the result is used solely to draw the card. None of it ever reaches us; Apple's handling is governed by <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>. Switch the location line off and no request is made.</p>
+
+  <h2>Crash reports and diagnostics</h2>
+  <p>Lookback includes no crash-reporting SDK or service. It does listen to Apple's on-device <strong>MetricKit</strong> diagnostics (crash, hang, and performance reports) and writes them to your device's local system log so problems can be debugged from the device itself — the app transmits none of it. MetricKit's own reporting is an Apple system feature governed by your device's analytics settings (Settings → Privacy &amp; Security → Analytics &amp; Improvements).</p>
+
   <h2>Notifications</h2>
-  <p>Lookback can send one optional daily reminder. This is a local notification scheduled on your device — no notification service or server is involved, and you can turn it off at any time in Settings.</p>
+  <p>Lookback can send one optional daily reminder, which may include a small blurred preview of one of that day's photos (never a screenshot or a photo flagged as sensitive). If you start a free trial, you can also choose one reminder before the trial ends. These are local notifications created on your device — no notification service or server is involved — and you can turn reminders off at any time in Settings.</p>
 
   <h2>Purchases</h2>
   <p>Lookback Pro is an auto-renewable subscription processed by Apple through the App Store. Apple handles all payment information; Lookback never sees your name, payment details, or Apple ID. Apple's handling of that data is governed by <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
@@ -72,7 +78,7 @@
   <h2>Contact</h2>
   <p>Questions about privacy? Email <a href="mailto:arixking@gmail.com">arixking@gmail.com</a>.</p>
 
-  <footer>Lookback — your photos never leave your device.</footer>
+  <footer>Lookback — your photos stay on your device, and nothing about you is collected.</footer>
 </main>
 </body>
 </html>
